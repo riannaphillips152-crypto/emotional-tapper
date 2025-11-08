@@ -1,0 +1,32 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Make body fill the full viewport height */
+  overflow: hidden; /* Prevents scrollbars */
+  background-color: #000;
+  color: white; /* Default text color for the page */
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+}
+
+/* This container will hold the canvas */
+#canvas-container {
+  flex-grow: 1; /* Allows this element to grow and fill available space */
+  display: flex; /* Helps center the canvas if it's smaller */
+  justify-content: center;
+  align-items: center;
+}
+
+/* This is the new info box style */
+#info-box {
+  flex-shrink: 0; /* Prevents the box from shrinking */
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  border-top: 2px solid white; /* A simple separator */
+}

@@ -7,7 +7,7 @@
 // 5: Overwhelm
 const allPalettes = [
   // 0: Happy (Bright, warm yellows, oranges, and sky blue)
-  ['#333333', '#FFEB3B', '#FF9800', '#81D4FA'],
+  ['#FFFDE7', '#FFEB3B', '#FF9800', '#81D4FA'], // <-- THIS LINE CHANGED
 
   // 1: Sad (Muted, cool blues and grays)
   ['#263238', '#546E7A', '#90A4AE', '#B0BEC5'],
@@ -85,8 +85,6 @@ function draw() {
   // Animate the noise field over time
   // MouseY controls the speed of the animation
   zoff += map(mouseY, 0, height, 0.001, 0.02);
-  
-  // The drawTextBox() function is no longer needed!
 }
 
 // Function to resize canvas when window is resized
